@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+//package com.deepu.grpc.book.service;
+//option java_multiple_files = true;
+option java_package = "com.deepu.grpc.book.service";
+import "BookRequest.proto";
+import "BookResponse.proto";
+
+service BookService{
+  rpc getBooks(BookRequest) returns (BookResponse);
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+//package com.deepu.grpc.book.model;
+//option java_multiple_files = true;
+option java_package = "com.deepu.grpc.book.model";
+import "Book.proto";
+
+message BookResponse {
+  repeated Book books = 1;
+}
